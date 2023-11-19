@@ -58,7 +58,7 @@ var comp: Comp
 
 struct AllCardView_Previews: PreviewProvider {
   static var previews: some View {
-      AllCardView(comp: CompData[1])
+      AllCardView(comp: compData[1])
       .previewLayout(.fixed(width: 320, height: 640))
   }
 }

@@ -9,13 +9,13 @@ import SwiftUI
 struct ContentView: View {
   // MARK: - PROPERTIES
     
-  @AppStorage("ContentView") var ContentView: Bool = true
+  @AppStorage("ContentView") var contentView: Bool = true
   
   @State private var isShowingSettings: Bool = false
-    @State private var ContentViewVisible = true
+    @State private var contentViewVisible = true
     @AppStorage("isContent") var isContent: Bool = true
 
-    var comp: [Comp] = CompData
+    var comp: [Comp] = compData
 
   // MARK: - BODY
 
@@ -53,7 +53,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-      ContentView(comp: CompData)
+      ContentView(comp: compData)
   }
 }
 

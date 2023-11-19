@@ -39,7 +39,7 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
   static var previews: some View {
-    HeaderView(comp: CompData[0])
+    HeaderView(comp: compData[0])
       .previewLayout(.fixed(width: 375, height: 440))
   }
 }

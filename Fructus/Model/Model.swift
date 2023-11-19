@@ -15,7 +15,7 @@ struct Comp: Identifiable {
   var image: String
   var gradientColors: [Color]
   var description: String
-  var Details: [String]
+  var details: [String]
   var cardImage: String?
   var cardTitle: String?
   var cardHeadline: String?

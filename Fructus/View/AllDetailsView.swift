@@ -10,28 +10,28 @@ struct AllDetailsView: View {
   // MARK: - PROPERTIES
   
   var comp: Comp
-  let Details: [String] = ["Fequency", "Days", "Time"]
+  let details: [String] = ["Fequency", "Days", "Time"]
 
   // MARK: - BODY
 
   var body: some View {
     GroupBox() {
       DisclosureGroup("Details") {
-        ForEach(0..<Details.count, id: \.self) { item in
+        ForEach(0..<details.count, id: \.self) { item in
           Divider()
                 .padding(.vertical, 2)
           
           HStack {
             Group {
               Image(systemName: "info.circle")
-              Text(Details[item])
+              Text(details[item])
             }
             .foregroundColor(comp.gradientColors[1])
             .font(Font.system(.body).bold())
             
             Spacer(minLength: 25)
             
-            Text(comp.Details[item])
+            Text(comp.details[item])
               .multilineTextAlignment(.trailing)
           }
         }
@@ -44,7 +44,7 @@ struct AllDetailsView: View {
 
 struct AllDetailsView_Previews: PreviewProvider {
   static var previews: some View {
-      AllDetailsView(comp: CompData[0])
+      AllDetailsView(comp: compData[0])
       .preferredColorScheme(.dark)
       .previewLayout(.fixed(width: 375, height: 480))
       .padding()

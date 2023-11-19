@@ -9,7 +9,7 @@ import SwiftUI
 struct StartButtonView: View {
     // MARK: - PROPERTIES
 
-    @AppStorage("Onboarding") var Onboarding: Bool?
+    @AppStorage("Onboarding") var onboarding: Bool?
     @AppStorage("isOnboarding") var isOnboarding: Bool?
     @AppStorage("onButton") var onButton: Bool?
     
@@ -19,7 +19,7 @@ struct StartButtonView: View {
 
         Button(action: {
             // Navigate to the ContentView page
-            Onboarding = false
+            onboarding = false
             isOnboarding = false
             onButton = true
                

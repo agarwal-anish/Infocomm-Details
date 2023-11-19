@@ -9,11 +9,11 @@ import SwiftUI
 struct OnboardingView: View {
     // MARK: - PROPERTIES
     
-    var comp: [Comp] = CompData
+    var comp: [Comp] = compData
 //    var lj: [LJ] = LJData
     
     
-   @AppStorage("Onboarding") var Onboarding: Bool = true
+   @AppStorage("Onboarding") var onboarding: Bool = true
    @State private var ljOnboardingview = true
     
     // MARK: - BODY

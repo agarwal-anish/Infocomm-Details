@@ -21,6 +21,7 @@ opt_in_rules:
 disabled_rules:
   # anonymous_argument_in_multiline_closure
   # Add comments explaining why rules are disabled...
+  - line_length
 
 # Attributes configuration
 attributes:

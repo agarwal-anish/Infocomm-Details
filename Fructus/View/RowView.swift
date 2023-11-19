@@ -42,7 +42,7 @@ struct RowView: View {
 
 struct RowView_Previews: PreviewProvider {
   static var previews: some View {
-      RowView(comp: CompData[0])
+      RowView(comp: compData[0])
       .previewLayout(.sizeThatFits)
       .padding()
   }

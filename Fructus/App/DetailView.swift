@@ -66,6 +66,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
   static var previews: some View {
-    DetailView(comp: CompData[0])
+    DetailView(comp: compData[0])
   }
 }
